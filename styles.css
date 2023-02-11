@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1% 1% 1%;
+}
+
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: white;
+    border: 15px 32px;
+    border-style: solid;
+    border-color: black;
+    margin: 10px;
+    box-shadow: -3px 4px 5px black;
+    width: 230px;
+    height: 150px;
+    position: center;
+  }
+
+  .button-container {
+
+  }

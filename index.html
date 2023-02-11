@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT YOUR SOUNDTRACK</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/8/80/FF1_Main_Theme.ogg" id="ff1theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/1/1e/Main_Theme_FF2.ogg" id="ff2theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/2/2c/Eternal_Wind.ogg" id="ff3theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/6/6a/Main_Theme_of_Final_Fantasy_IV.ogg" id="ff4theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/6/65/FFV_Ahead_on_Our_Way.ogg" id="ff5theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/5/52/FFVI_Terra.ogg" id="ff6theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/b/b3/FFVII_Main_Theme.ogg" id="ff7theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/1/18/Blue_Fields.ogg" id="ff8theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/0/04/The_Place_I%27ll_Return_To_Someday.ogg" id="ff9theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/d/d8/To_Zanarkand.ogg" id="ff10theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/7/73/FFXI_Vana%27diel_March.ogg" id="ff11theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/f/ff/FFXII_The_Zodiac_Age_-_Final_Fantasy.ogg" id="ff12theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/b/b6/FFXIII_-_The_Promise.ogg" id="ff13theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/6/66/Answers.ogg" id="ff14theme"></audio>
+    <audio src="https://static.wikia.nocookie.net/finalfantasy/images/f/fc/XV_Somnus.ogg" id="ff15theme"></audio>
+
+    <h1>Final Fantasy Main Theme Sampler</h1>
+    <p>Click logo to hear a snippet of game's main theme. Click again to pause.</p>
+    <div class = "playbutton">
+        
+        <!-- <script>
+            function play(mus) {
+                var music = mus
+                if (music.paused) {
+                    music.play()
+                } else {
+                    music.pause()
+                }
+            }
+        </script>
+
+        I want to figure out how to pass variables into this function so I don't have to rewrite the function each time, but ran out of queue time lol.
+        The way I copy-pasted below is totally absurd but I just wanted to get it to work for now before going into the CSS. -->
+
+
+        <p>
+            <button onClick="play1()">
+                <div classes="button-container">
+                    <img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff_en-fd5651228e609e38ed6ae17c07cf08c6cdc3b667ccc9ffcdcc0983ccbcbe3878.png" 
+                    alt = "Final Fantasy I Logo">
+                </div>
+        </button>
+                <script>
+                    function play1() {
+                        var ffI = document.getElementById("ff1theme")
+                        if (ffI.paused) {
+                            ffI.play()
+                        } else {
+                            ffI.pause()
+                        }
+                    }
+                </script>
+                
+            <button type="button" onClick="play2()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff2_en-bb8e3358671040ac242d6985b102417f03016c7905989bd6a813013e5152269b.png" 
+                alt = "Final Fantasy II Logo"></button>
+                <script>
+                    function play2() {
+                        var ffII = document.getElementById("ff2theme")
+                        if (ffII.paused) {
+                            ffII.play()
+                        } else {
+                            ffII.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play3()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff3_en-9cf2448265f1da3b34776c5d9a6984f02f83ab01e5b8aa52dcead5ad35936ffd.png" 
+                alt = "Final Fantasy III Logo"></button>
+                <script>
+                    function play3() {
+                        var ffIII = document.getElementById("ff3theme")
+                        if (ffIII.paused) {
+                            ffIII.play()
+                        } else {
+                            ffIII.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play4()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff4_en-0b801179bed8c6786323201d1a84d4235cd9565b92981246502a8e17e5e1f5b3.png" 
+                alt = "Final Fantasy IV Logo"></button>
+                <script>
+                    function play4() {
+                        var ffIV = document.getElementById("ff4theme")
+                        if (ffIV.paused) {
+                            ffIV.play()
+                        } else {
+                            ffIV.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play5()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff5_en-70cc044a190b64244cd8017786ced3140de1e2dbb769618320432d1d3d53898e.png" 
+                alt = "Final Fantasy V Logo"></button>
+                <script>
+                    function play5() {
+                        var ffV = document.getElementById("ff5theme")
+                        if (ffV.paused) {
+                            ffV.play()
+                        } else {
+                            ffV.pause()
+                        }
+                    }
+                </script>
+        </p>
+            
+        <p>
+            <button type="button" onClick="play6()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff6_en-9e0b9c5e2ab54bc0b0e754976047bc11d9ed0f6bf254890315a27cb6bef0632b.png" 
+                alt = "Final Fantasy VI Logo"></button>
+                <script>
+                    function play6() {
+                        var ffVI = document.getElementById("ff6theme")
+                        if (ffVI.paused) {
+                            ffVI.play()
+                        } else {
+                            ffVI.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play7()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff7_en-0e853c0274f5900f22928c78f232402f66c6f9b88bb05de5564439d406251c18.png" 
+                alt = "Final Fantasy VII Logo"></button>
+                <script>
+                    function play7() {
+                        var ffVII = document.getElementById("ff7theme")
+                        if (ffVII.paused) {
+                            ffVII.play()
+                        } else {
+                            ffVII.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play8()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff8_en-aed5d8c02d6eafb0731853ad8bd43d8f69cb95448b75a63622f5fc0249606920.png" 
+                alt = "Final Fantasy VIII Logo"></button>
+                <script>
+                    function play8() {
+                        var ffVIII = document.getElementById("ff8theme")
+                        if (ffVIII.paused) {
+                            ffVIII.play()
+                        } else {
+                            ffVIII.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play9()"><img src = "https://cache-eu.finalfantasy.com/assets/web/title/logo_ff9_en-5ee9d35596777caa408169470637e6f622f703329d95a194f6f548c0d704e2cd.png" 
+                alt = "Final Fantasy IX Logo"></button>
+                <script>
+                    function play9() {
+                        var ffIX = document.getElementById("ff9theme")
+                        if (ffIX.paused) {
+                            ffIX.play()
+                        } else {
+                            ffIX.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play10()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff10_en-540924fa631e0a47ef7b2388c092099cf4e1fea230cf80731e13f6408308e8b4.png" 
+                alt = "Final Fantasy X Logo"></button>
+                <script>
+                    function play10() {
+                        var ffX = document.getElementById("ff10theme")
+                        if (ffX.paused) {
+                            ffX.play()
+                        } else {
+                            ffX.pause()
+                        }
+                    }
+                </script>
+        </p>
+
+        <p>
+            <button type="button" onClick="play11()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff11_en-f2cda9a318761d95a2092617cc0ca162071b9091ce40a4e0d1d7a1a46eb0c325.png" 
+                alt = "Final Fantasy XI Logo"></button>
+                <script>
+                    function play11() {
+                        var ffXI = document.getElementById("ff11theme")
+                        if (ffXI.paused) {
+                            ffXI.play()
+                        } else {
+                            ffXI.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play12()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff12_en-76e8558555086cefbd75ccfa8256a653db4dbc3d98da9cd9ef2e4e97143cc6cd.png" 
+                alt = "Final Fantasy XII Logo"></button>
+                <script>
+                    function play12() {
+                        var ffXII = document.getElementById("ff12theme")
+                        if (ffXII.paused) {
+                            ffXII.play()
+                        } else {
+                            ffXII.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play13()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff13_en-8d1618f81ddac2500f5e245293ce0f7864233e88eb505d0468828fb8703136f5.png" 
+                alt = "Final Fantasy XIII Logo"></button>
+                <script>
+                    function play13() {
+                        var ffXIII = document.getElementById("ff13theme")
+                        if (ffXIII.paused) {
+                            ffXIII.play()
+                        } else {
+                            ffXIII.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play14()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff14-d51f9f947abecc3cf9322518d4e9a860a7358a6dccf9439f50caea8443d7e133.png" 
+                alt = "Final Fantasy XIV Logo"></button>
+                <script>
+                    function play14() {
+                        var ffXIV = document.getElementById("ff14theme")
+                        if (ffXIV.paused) {
+                            ffXIV.play()
+                        } else {
+                            ffXIV.pause()
+                        }
+                    }
+                </script>
+            <button type="button" onClick="play15()"><img src = "https://cache-na.finalfantasy.com/assets/web/title/logo_ff15_en-39d4fc0908146e3233b0c260e1f0177feb6d619ccbff13ee2925076eefc3f9ab.png" 
+                alt = "Final Fantasy XV Logo"></button>
+                <script>
+                    function play15() {
+                        var ffXV = document.getElementById("ff15theme")
+                        if (ffXV.paused) {
+                            ffXV.play()
+                        } else {
+                            ffXV.pause()
+                        }
+                    }
+                </script>
+        </p>
+    </div>
+</body>
+</html>
